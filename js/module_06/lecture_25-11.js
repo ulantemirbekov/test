@@ -92,10 +92,11 @@
 // =======================================
 // Дан массив со строками. Оставьте в нем только те строки, длина которых больше 5-ти символов.
 
-// const array = ['lorem', 'ipsum', 'dolor', 'sit', 'amet'];  //================================== check
+// const array = ['loremdss', 'ipsumfg', 'dolor', 'sit', 'amet'];  //================================== check
 
 // const result = array.filter(arr => arr.length > 5);
 // console.log(result);
+
 
 // const arrStrings = [
 //     'Lorema',
@@ -172,36 +173,36 @@
 //     </a>
 // </li>' для каждого из элементов массива
 // =========================================
-const products = [
-    {
-        id: "1",
-        name: "Bread",
-        description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, at?",
-    },
-    {
-        id: "2",
-        name: "Milk",
-        description: "Lorem, ipsum dolor sit amet",
-    },
-    {
-        id: "3",
-        name: "Eggs",
-        description: "Lorem, ipsum dolor sit amet consectetur Temporibus, at?",
-    },
-];
-const cart = [];
+// const products = [
+//     {
+//         id: "1",
+//         name: "Bread",
+//         description:
+//             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, at?",
+//     },
+//     {
+//         id: "2",
+//         name: "Milk",
+//         description: "Lorem, ipsum dolor sit amet",
+//     },
+//     {
+//         id: "3",
+//         name: "Eggs",
+//         description: "Lorem, ipsum dolor sit amet consectetur Temporibus, at?",
+//     },
+// ];
+// const cart = [];
 
 // Напишите функцию, которая будет добавлять элемент в массив cart и создавать ему дополнительное свойство quantity равное единице
 
-const addToCart = (arr, id) => {
-    const elem = arr.find(item => item.id === id);
-    elem.quantity = 1;
-    cart.push(elem)
-}
+// const addToCart = (arr, id) => {
+//     const elem = arr.find(item => item.id === id);
+//     elem.quantity = 1;
+//     cart.push(elem)
+// }
 
-addToCart(products, '3')
-addToCart(products, '2')
+// addToCart(products, '3')
+// addToCart(products, '2')
 // console.log(cart);
 
 
@@ -216,40 +217,40 @@ addToCart(products, '2')
 
 // Напишите функцию, которая будет добавлять количество товаров (свойство quantity) на единицу
 
-const addQuantity = (id) => {
-    const product = cart.find(item => item.id === id);
-    product.quantity += 1
-    console.log(product);
-};
+// const addQuantity = (id) => {
+//     const product = cart.find(item => item.id === id);
+//     product.quantity += 1
+//     console.log(product);
+// };
 
-addQuantity('3')
-addQuantity('3')
+// addQuantity('3')
+// addQuantity('3')
 
-const decrQuantity = (id) => {
-    const product = cart.find(item => item.id === id);
-    if (product.quantity < 1) {
-        return;
-    } else product.quantity -= 1;
-}
+// const decrQuantity = (id) => {
+//     const product = cart.find(item => item.id === id);
+//     if (product.quantity < 1) {
+//         return;
+//     } else product.quantity -= 1;
+// }
 
-decrQuantity('3')
-console.log(cart);
+// decrQuantity('3')
+// console.log(cart);
 
 
 // Напишите функцию, которая будет фильтровать массив products по названию товара
 
-const filterByName = (arr, name) => {
-    return arr.filter(item => item.name.toLowerCase().includes(name.toLowerCase()))
-};
-console.log(filterByName(products, 'milk'));
+// const filterByName = (arr, name) => {
+//     return arr.filter(item => item.name.toLowerCase().includes(name.toLowerCase()))
+// };
+// console.log(filterByName(products, 'milk'));
 
 // Напишите функцию, которая будет возвращать разметку формата, пригодного для отображения информации о товаре в модальном окне.
 // Обязательно добавить кнопки добавления товара и записать в них id товара
 
 
-const createMarkup = () => {
+// const createMarkup = () => {
 
-}
+// }
 
 
 // Модифицируйте функцию, которая добавляет элемент в массив cart, при этом использует id  для поиска элемента в массиве products и если он совпадает - добавляет объект с дополнительным свойством quantity
